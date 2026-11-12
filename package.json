@@ -1,0 +1,9 @@
+{
+  "name": "snip-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Snip URL shortener API (Bun, zero dependencies)",
+  "scripts": {
+    "start": "bun run server.js"
+  }
+}
