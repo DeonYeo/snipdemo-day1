@@ -129,10 +129,6 @@ async function handle(request) {
     return error("Method not allowed", 405);
   }
 
-  if (pathname === "/healthz" && request.method === "GET") {
-    return json({ ok: true });
-  }
-
   if (request.method === "GET") {
     const file = await staticFile(pathname);
     if (file) return file;

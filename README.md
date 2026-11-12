@@ -9,7 +9,6 @@ The Snip API: a single-file [Bun](https://bun.sh) server with zero npm dependenc
 | `POST` | `/api/links` | `{ "url": "https://…" }` | `201` `{ code, url, shortUrl, hits, createdAt }` · `400` `{ error }`     |
 | `GET`  | `/api/links` | —                        | `200` array of all links                                                 |
 | `GET`  | `/:code`     | —                        | `302` to the original URL (+1 hit) · `404` `{ error }` if unknown        |
-| `GET`  | `/healthz`   | —                        | `200` `{ ok: true }` (liveness probe)                                    |
 
 ## Configuration
 
