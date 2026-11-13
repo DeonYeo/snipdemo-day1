@@ -9,7 +9,7 @@ app and a Node.js CLI. Each layer has its own orphan branch in this repository;
 | Branch | Contents |
 | --- | --- |
 | `backend` | Bun API server |
-| `frontend` | Angular 20 web app |
+| `frontend` | Angular 22 web app |
 | `cli` | Zero-dependency CommonJS CLI |
 | `bundle` | Generated release: API server, built UI, and CLI |
 | `main` | Submodule pointers, build script, documentation, and CI |
