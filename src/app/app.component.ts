@@ -1,5 +1,5 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { Component, OnInit, inject, signal } from '@angular/core';
+import { Component, OnInit, inject, signal, ChangeDetectionStrategy } from '@angular/core';
 import { AbstractControl, FormControl, ReactiveFormsModule, ValidationErrors, Validators } from '@angular/forms';
 import { Subscription, finalize } from 'rxjs';
 import { Link, LinksService } from './links.service';
@@ -20,6 +20,7 @@ function httpUrl(control: AbstractControl): ValidationErrors | null {
   selector: 'app-root',
   imports: [ReactiveFormsModule],
   templateUrl: './app.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
